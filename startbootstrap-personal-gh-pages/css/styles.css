@@ -11731,4 +11731,20 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+
+  .project-image-box {
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .project-image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 }
