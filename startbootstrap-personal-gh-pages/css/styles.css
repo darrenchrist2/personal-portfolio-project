@@ -11747,4 +11747,10 @@ html {
     max-height: 100%;
     object-fit: contain;
   }
+
+  @media (min-width: 576px) {
+      .btn-sm-normal {
+          font-size: 1rem;
+      }
+  }
 }
