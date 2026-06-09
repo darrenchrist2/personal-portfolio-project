@@ -16,6 +16,32 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            .experience-list-mobile {
+                display: none;
+            }
+
+            @media (max-width: 767.98px) {
+                .experience-list-desktop {
+                    display: none;
+                }
+
+                .experience-list-mobile {
+                    display: block;
+                    font-size: 0.70rem;
+                    line-height: 1.5;
+                }
+
+                .experience-list-mobile p {
+                    margin-bottom: 1rem;
+                }
+
+                .experience-list-mobile p:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -65,7 +91,8 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-7">
-                                            <ul>
+                                            <!-- Desktop version -->
+                                            <ul class="experience-list-desktop">
                                                 <li>
                                                     Built the frontend of a finance module for an internal enterprise app serving 30 active users, reducing manual employee claim submission and finance claim reporting time by an estimated 70% through a React.js-based UI with integrated REST APIs.
                                                 </li>
@@ -73,6 +100,16 @@
                                                     Integrated 54 REST API endpoints into a React.js finance module within a company-wide internal app, enabling real-time data flow across 5 finance workflows and cutting cross-team data retrieval steps by 60%.
                                                 </li>
                                             </ul>
+
+                                            <!-- Mobile version -->
+                                            <div class="experience-list-mobile">
+                                                <p>
+                                                    Built the frontend of a finance module for an internal enterprise app serving 30 active users, reducing manual employee claim submission and finance claim reporting time by an estimated 70% through a React.js-based UI with integrated REST APIs.
+                                                </p>
+                                                <p>
+                                                    Integrated 54 REST API endpoints into a React.js finance module within a company-wide internal app, enabling real-time data flow across 5 finance workflows and cutting cross-team data retrieval steps by 60%.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
